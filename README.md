@@ -29,6 +29,8 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+Wanna try it out in your browser? Visit at https://colornet.streamlit.app/
+
 ## Requirements
 - Python 3.7+
 - TensorFlow 2.x
