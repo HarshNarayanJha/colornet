@@ -172,8 +172,10 @@ poetry.toml
 
 *.model
 *.pkl
+!tv.pkl
 data
 *.keras
+!colornet.keras
 *.weights.h5
 test
 .zed
