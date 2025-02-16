@@ -6,6 +6,7 @@
 
 # %%
 import os
+import pickle
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -105,6 +106,8 @@ plt.show()
 # Save
 model.save("colornet.keras")
 model.save_weights("colornet.weights.h5")
+with open('tv.pkl', 'wb') as f_tv:
+    pickle.dump(tv, f_tv)
 
 # %% [md]
 # ### Some prediction game!
