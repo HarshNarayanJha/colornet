@@ -1,7 +1,38 @@
-# ColorNet: Generating RGB Colors from Text Sequences using RNNs
+# ColorNet: Generating RGB colors from text sequences using RNNs
 
-This repo contains files for generating 3-channel RGB color outputs from plain text using Recurrent Neural Network (RNN).
+A neural network that predicts RGB colors from text descriptions. Give it color names or descriptive phrases like "sunset orange" or "ocean blue", and it generates corresponding RGB values.
 
-## Datasets
+## How it Works
 
-1. Color name dataset from unknown source
+- Uses LSTM layers to process text input character by character
+- Converts text descriptions into numerical sequences
+- Outputs normalized RGB values between 0-1
+- Trained on a dataset of color names and their RGB values
+
+## Examples
+
+Input -> Output (RGB)
+- "ocean blue" -> (41, 128, 185)
+- "forest" -> (34, 139, 34)
+- "sunset orange" -> (253, 94, 83)
+- "storm grey" -> (119, 136, 153)
+
+## Usage
+
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the Streamlit app:
+```bash
+streamlit run app.py
+```
+
+## Requirements
+- Python 3.7+
+- TensorFlow 2.x
+- Pandas
+- NumPy
+- Matplotlib
+- Streamlit
